@@ -30,10 +30,8 @@ export class MenuScene extends Phaser.Scene {
     }
 
     playMusic(){
-        let songs = ['song1', 'song2', 'song3'];
-        let randomSong = songs[Math.floor(Math.random() * songs.length)];
-        let backgroundMusic = this.sound.add(randomSong, { loop: true });
-        backgroundMusic.volume = 0.4;
+        let backgroundMusic = this.sound.add('song', { loop: true });
+        backgroundMusic.volume = 0.2;
         backgroundMusic.play();
     }
 

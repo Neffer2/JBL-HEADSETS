@@ -21,16 +21,12 @@ export class PreloadScene extends Phaser.Scene {
         this.load.image('nota5', 'generic-png/notes/nota5.png');
 
         // Sounds
-        this.load.audio('song1', 'music/song1.mp3');
-        this.load.audio('song2', 'music/song2.mp3');
-        this.load.audio('song3', 'music/song3.mp3');
-        this.load.audio('C', 'music/notes/c.mp3');
-        this.load.audio('D', 'music/notes/d.mp3');
-        this.load.audio('E', 'music/notes/e.mp3');
-        this.load.audio('F', 'music/notes/f.mp3');
-        this.load.audio('G', 'music/notes/g.mp3');
-        this.load.audio('A', 'music/notes/a.mp3');
-        this.load.audio('B', 'music/notes/b.mp3');
+        this.load.audio('song', 'music/song.mp3');
+        this.load.audio('C', 'music/notes/c.wav');
+        this.load.audio('D', 'music/notes/d.wav');
+        this.load.audio('E', 'music/notes/e.wav');
+        this.load.audio('F', 'music/notes/f.wav');
+        this.load.audio('G', 'music/notes/g.wav');
     }    
  
     create(){
