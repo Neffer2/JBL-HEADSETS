@@ -24,8 +24,8 @@ export class MainScene extends Phaser.Scene {
     init() {
         width = this.game.config.width;
         height = this.game.config.height;
-        this.add.image(0, 0, 'background').setScale(0.49).setOrigin(0, 0);        
-        this.add.image(140, 50, 'logo').setScale(0.5);
+        this.add.image(0, 0, 'background').setScale(0.9).setOrigin(0, 0);        
+        this.add.image(90, 80, 'logo').setScale(0.5);
         const headsets = this.add.image(0, 0, 'headsets').setScale(0.49).setOrigin(0.5, 0.5);
         headsets.setPosition(width / 2, height / 2);
         this.tweens.add({
@@ -37,8 +37,8 @@ export class MainScene extends Phaser.Scene {
             repeat: -1,
             ease: 'Sine.easeInOut'
         });
-        scoreText = this.add.text((width/2) + 68, 5, "Puntaje: "+scoreCounter, { font: '40px font1', fill: '#f18623' });
-        scoreTimer = this.add.text((width/2) + 68, 50, "Tiempo: "+time, { font: '40px font1', fill: '#f18623' });
+        scoreText = this.add.text((width/2) + 108, 25, "Puntaje: "+scoreCounter, { font: '40px font1', fill: '#fff' });
+        scoreTimer = this.add.text((width/2) + 108, 70, "Tiempo: "+time, { font: '40px font1', fill: '#fff' });
     }
 
     getRandomInt(min, max) {
